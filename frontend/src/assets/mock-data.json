@@ -1,0 +1,285 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "firstName": "Max",
+      "lastName": "Mustermann",
+      "position": "Manager",
+      "department": "Sales",
+      "salary": 60000
+    },
+    {
+      "id": 2,
+      "firstName": "Anna",
+      "lastName": "Musterfrau",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "salary": 75000
+    },
+    {
+      "id": 3,
+      "firstName": "Erik",
+      "lastName": "Schmidt",
+      "position": "Designer",
+      "department": "Marketing",
+      "salary": 55000
+    },
+    {
+      "id": 4,
+      "firstName": "Lena",
+      "lastName": "Meier",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "salary": 50000
+    },
+    {
+      "id": 5,
+      "firstName": "Tom",
+      "lastName": "Schulz",
+      "position": "Accountant",
+      "department": "Finance",
+      "salary": 52000
+    },
+
+    {
+      "id": 6,
+      "firstName": "Laura",
+      "lastName": "Becker",
+      "position": "Project Manager",
+      "department": "Project Management",
+      "salary": 68000
+    },
+    {
+      "id": 7,
+      "firstName": "Felix",
+      "lastName": "Schulze",
+      "position": "Sales Associate",
+      "department": "Sales",
+      "salary": 48000
+    },
+    {
+      "id": 8,
+      "firstName": "Sophie",
+      "lastName": "Wagner",
+      "position": "Software Developer",
+      "department": "Engineering",
+      "salary": 72000
+    },
+    {
+      "id": 9,
+      "firstName": "Mia",
+      "lastName": "Hoffmann",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "salary": 56000
+    },
+    {
+      "id": 10,
+      "firstName": "Noah",
+      "lastName": "Koch",
+      "position": "Financial Analyst",
+      "department": "Finance",
+      "salary": 62000
+    },
+    {
+      "id": 11,
+      "firstName": "Emma",
+      "lastName": "Fischer",
+      "position": "Designer",
+      "department": "Marketing",
+      "salary": 55000
+    },
+    {
+      "id": 12,
+      "firstName": "Liam",
+      "lastName": "Müller",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "salary": 75000
+    },
+    {
+      "id": 13,
+      "firstName": "Hannah",
+      "lastName": "Schneider",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "salary": 50000
+    },
+    {
+      "id": 14,
+      "firstName": "Julian",
+      "lastName": "Schwarz",
+      "position": "Accountant",
+      "department": "Finance",
+      "salary": 52000
+    },
+    {
+      "id": 15,
+      "firstName": "Emma",
+      "lastName": "Schmitt",
+      "position": "Software Developer",
+      "department": "Engineering",
+      "salary": 71000
+    },
+    {
+      "id": 16,
+      "firstName": "Paul",
+      "lastName": "Bauer",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "salary": 68000
+    },
+    {
+      "id": 17,
+      "firstName": "Marie",
+      "lastName": "Kaiser",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "salary": 73000
+    },
+    {
+      "id": 18,
+      "firstName": "Oskar",
+      "lastName": "Lehmann",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "salary": 57000
+    },
+    {
+      "id": 19,
+      "firstName": "Emilia",
+      "lastName": "Schreiber",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "salary": 65000
+    },
+    {
+      "id": 20,
+      "firstName": "Jonas",
+      "lastName": "Hermann",
+      "position": "Financial Planner",
+      "department": "Finance",
+      "salary": 63000
+    },
+    {
+      "id": 21,
+      "firstName": "Mia",
+      "lastName": "Wolff",
+      "position": "Designer",
+      "department": "Marketing",
+      "salary": 55000
+    },
+    {
+      "id": 22,
+      "firstName": "Luis",
+      "lastName": "Jung",
+      "position": "Software Developer",
+      "department": "Engineering",
+      "salary": 72000
+    },
+    {
+      "id": 23,
+      "firstName": "Johanna",
+      "lastName": "Schultheis",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "salary": 50000
+    },
+    {
+      "id": 24,
+      "firstName": "Sophie",
+      "lastName": "Brandt",
+      "position": "Accountant",
+      "department": "Finance",
+      "salary": 52000
+    },
+    {
+      "id": 25,
+      "firstName": "Leon",
+      "lastName": "Krause",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "salary": 74000
+    },
+    {
+      "id": 26,
+      "firstName": "Clara",
+      "lastName": "Bach",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "salary": 58000
+    },
+    {
+      "id": 27,
+      "firstName": "Elias",
+      "lastName": "Kühn",
+      "position": "Financial Analyst",
+      "department": "Finance",
+      "salary": 61000
+    },
+    {
+      "id": 28,
+      "firstName": "Lina",
+      "lastName": "Neumann",
+      "position": "Project Manager",
+      "department": "Project Management",
+      "salary": 70000
+    },
+    {
+      "id": 29,
+      "firstName": "Ben",
+      "lastName": "Krüger",
+      "position": "Sales Associate",
+      "department": "Sales",
+      "salary": 49000
+    },
+    {
+      "id": 30,
+      "firstName": "Mara",
+      "lastName": "Hess",
+      "position": "Software Developer",
+      "department": "Engineering",
+      "salary": 71000
+    },
+    {
+      "id": 31,
+      "firstName": "Finn",
+      "lastName": "Sauer",
+      "position": "Designer",
+      "department": "Marketing",
+      "salary": 56000
+    },
+    {
+      "id": 32,
+      "firstName": "Mila",
+      "lastName": "Friedrich",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "salary": 51000
+    },
+    {
+      "id": 33,
+      "firstName": "Luca",
+      "lastName": "Weiss",
+      "position": "Accountant",
+      "department": "Finance",
+      "salary": 53000
+    },
+    {
+      "id": 34,
+      "firstName": "Hannah",
+      "lastName": "Graf",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "salary": 73000
+    },
+    {
+      "id": 35,
+      "firstName": "Maximilian",
+      "lastName": "Lange",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "salary": 59000
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+.nav {
+  position: fixed; /* Fixiert das Element */
+  top: 1; /* Oben an das Fenster anheften */
+  left: 0; /* Links an das Fenster anheften */
+  height: 100%; /* Volle Höhe des Fensters */
+  width: 150px; /* Gewünschte Breite des Navigationsbereichs */
+  background-color: #f8f9fa; /* Hintergrundfarbe festlegen */
+}
+
+.nav-link {
+  color: #000; /* Standardfarbe */
+  transition: background-color 0.9s ease;
+
+  border-radius: 20px;
+}
+
+.nav-link:hover {
+  background-color: #c2c2c269; /* Neue Hintergrundfarbe beim Hover */
+}

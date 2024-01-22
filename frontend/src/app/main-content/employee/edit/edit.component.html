@@ -1,0 +1,79 @@
+<div class="container-fluid p-0">
+  <!-- Menüleiste -->
+  <ul class="nav nav-tabs mt-3">
+    <li class="nav-item">
+      <!-- prettier-ignore -->
+      <a class="nav-link " href="/employee">
+          <object data="assets/svg/overviewEmployee.svg" type=""></object><span class="ms-2">Übersicht</span></a>
+    </li>
+    <li class="nav-item">
+      <!-- prettier-ignore -->
+      <a class="nav-link active" href="/employee/add">
+          <object data="assets/svg/addEmployee.svg" type=""></object><span class="ms-2">Mitarbeiter Bearbeiten</span></a>
+    </li>
+    <li class="nav-item">
+      <!-- prettier-ignore -->
+      <a class="nav-link" href="">
+          <object data="assets/svg/serviceEmployee.svg" type=""></object><span class="ms-2">Dienstleistungen</span></a>
+    </li>
+  </ul>
+
+  <div class="container-fluid">
+    <div class="row mt-3 me-2 p-0">
+      <!-- Mitarbeiter-Edit -->
+      <form class="row g-3" (ngSubmit)="saveChanges()">
+        <!-- Vorname -->
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Vorname</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            [(ngModel)]="employee.firstName"
+            name="firstName"
+          />
+        </div>
+
+        <!-- Nachname -->
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Nachname</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword4"
+            [(ngModel)]="employee.lastName"
+            name="lastName"
+          />
+        </div>
+
+        <!-- Position -->
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Position</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            [(ngModel)]="employee.position"
+            name="position"
+          />
+        </div>
+
+        <!-- Abteilung -->
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Abteilung</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            [(ngModel)]="employee.department"
+            name="department"
+          />
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Speichern</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.form-control::placeholder {
+  font-size: 12px; /* Stelle die Schriftgröße nach deinen Wünschen ein */
+  text-overflow: ellipsis; /* Füge "..." bei Überdeckung hinzu */
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* uhr-anzeige.component.css */
+
+.hoverable {
+  cursor: pointer;
+}

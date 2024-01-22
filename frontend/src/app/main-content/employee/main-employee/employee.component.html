@@ -1,0 +1,104 @@
+<div class="container-fluid p-0">
+  <!-- Menüleiste -->
+  <ul class="nav nav-tabs mt-3">
+    <li class="nav-item">
+      <!-- prettier-ignore -->
+      <a class="nav-link active" href="/employee">
+        <object data="assets/svg/overviewEmployee.svg" type=""></object><span class="ms-2">Übersicht</span></a>
+    </li>
+    <li class="nav-item">
+      <!-- prettier-ignore -->
+      <a class="nav-link" href="/employee/add">
+        <object data="assets/svg/addEmployee.svg" type=""></object><span class="ms-2">Mitarbeiter Hinzufügen</span></a>
+    </li>
+    <li class="nav-item" title="work in progress">
+      <!-- prettier-ignore -->
+      <a class="nav-link" href="/employee" >
+        <object data="assets/svg/serviceEmployee.svg" type=""></object><span class="ms-2">Dienstleistungen</span></a>
+    </li>
+  </ul>
+  <!-- Main-Content -->
+  <div class="container-fluid">
+    <div class="row mt-3 me-2 p-0">
+      <!-- Mitarbeiter-Card -->
+      <!-- prettier-ignore -->
+      <div class="col-4 me-3 mb-3 p-0 shadow-sm rounded bg-body-secondary" id="card" *ngFor="let employee of pagedEmployees()" style="width: 20rem">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- MA-Image -->
+            <div class="col-4 pe-0 pt-1">
+              <img
+                src="assets/img/pic1.png"
+                style="max-width: 100px; height: auto"
+                class="card-img-top"
+              />
+            </div>
+
+            <!-- MA-Informationen -->
+            <div class="col-8 text-start pe-0">
+              <div class="mb-2">
+                <b>{{ employee.firstName }} {{ employee.lastName }}</b>
+
+                <!-- Zusätzliche-Optionen -->
+                <!-- prettier-ignore -->
+                <button class="rounded-circle ms-2 mt-1 border border-shadow-sm hoverable" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <object data="assets/svg/threePoints.svg" type=""></object>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <!-- prettier-ignore -->
+                    <button class="dropdown-item" [routerLink]="['/employee/edit', employee.id]">
+                      <object data="assets/svg/edit.svg" type=""></object>
+                      <span>Bearbeiten</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      (click)="deleteEmployee(employee.id)"
+                    >
+                      <object data="assets/svg/delete.svg" type=""></object>
+                      <span>Löschen</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <p class="mb-1" id="custom-text">
+                <b>{{ employee.position }} </b>-<span>
+                  {{ employee.department }}</span
+                >
+              </p>
+              <div>
+                <object data="assets/svg/phone.svg" type=""></object>
+                <object data="assets/svg/email.svg" type=""></object>
+              </div>
+              
+              <!-- Random Anwesend -->
+              <p class="mt-1 custom-text-present mb-1" [class]="getStatusClass(employee.status)" style="max-width: 80px; display: flex; align-items: center; justify-content: center;">
+                <span class="present">{{ employee.status }}</span>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pagination -->
+  <div class="row mt-3">
+    <div class="col-12">
+      <ul class="pagination">
+        <li class="page-item hoverable">
+          <a class="page-link" (click)="prevPage()">Previous</a>
+        </li>
+        <li class="page-item hoverable" *ngFor="let page of pages()">
+          <a class="page-link" (click)="setCurrentPage(page)">{{ page }}</a>
+        </li>
+        <li class="page-item hoverable">
+          <a class="page-link" (click)="nextPage()">Next</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

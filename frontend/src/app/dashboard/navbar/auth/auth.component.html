@@ -1,0 +1,158 @@
+<div>
+  <!-- prettier-ignore -->
+  <button type="button" class="btn btn-outline-secondary px-3 py-1 mx-4 fs-7 border border-secondary-subtle text-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Registrieren <img src="assets/svg/registrie.svg" alt="registrie" />
+  </button>
+</div>
+
+<!-- Modal -->
+<div>
+  <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content container-fluid">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            Registrieren
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <!-- Sign up Form -->
+        <div class="modal-body container-fluid">
+          <form
+            (ngSubmit)="submitForm()"
+            #registrierungsForm="ngForm"
+            class="row"
+          >
+            <div class="form-group mb-3 col-12">
+              <label for="email" class="form-label">E-Mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                name="email"
+                [(ngModel)]="signInData.email"
+                required
+              />
+            </div>
+
+            <div class="form-group mb-4 col-12">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                [(ngModel)]="signInData.password"
+                required
+              />
+            </div>
+
+            <div class="col-12 d-grid gap-2">
+              <button
+                type="submit"
+                [disabled]="!registrierungsForm.valid"
+                class="btn btn-dark mb-3"
+              >
+                Registrieren
+              </button>
+            </div>
+          </form>
+
+          <hr />
+
+          <div class="text-center mt-4">
+            <p style="font-size: 13px">
+              Sie sind bereits Registriert:<a
+                data-bs-target="#loginModal"
+                data-bs-toggle="modal"
+                href="#"
+              >
+                Anmelden</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign in Modal -->
+  <div
+    class="modal fade"
+    id="loginModal"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="loginModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Anmelden</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <!-- Sign in Form -->
+        <div class="modal-body container-fluid">
+          <form (ngSubmit)="loginFormSubmit()" #loginForm="ngForm" class="row">
+            <div class="form-group mb-3 col-12">
+              <label for="email" class="form-label">E-Mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                name="email"
+                [(ngModel)]="signInData.email"
+                required
+              />
+            </div>
+
+            <div class="form-group mb-4 col-12">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                [(ngModel)]="signInData.password"
+                required
+              />
+            </div>
+
+            <div class="col-12 d-grid gap-2">
+              <button
+                type="submit"
+                [disabled]="!registrierungsForm.valid"
+                class="btn btn-dark mb-3"
+              >
+                Anmelden
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
